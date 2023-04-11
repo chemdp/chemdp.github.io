@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <title>Laboratorní práce pro základní a střední školy - Galerie</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="galerie.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="background">
+        <div class="topnav">
+            <nav>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">ÚVOD</a></li>
+                        <li><a href="zakladni.html">ZÁKLADNÍ ŠKOLY</a></li>
+                        <li><a href="stredni.html">STŘEDNÍ ŠKOLY</a></li>
+                        <li><a href="galerie.html">GALERIE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>  
+        </div>
+            <div class="full-img" id="fullImgBox">
+                <img src="images/banner.jpg" alt="" id="fullImg" />
+                <span onclick="closeFullImg()">X</span>
+            </div>
+        
+        <h1 style="text-align: center">GALERIE</h1>
+        <div class="gallery">
+            <figure>
+                <img src="images/01-amoniakova-fontana.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Amoniaková fontána</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/02-jednoducha-destilace.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Jednoduchá destilace</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/03-propan-butan.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Propan-butan</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/04-titrace.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Titrace</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/05-elektrolyza.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Elektrolýza</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/06-hasici-pristroj.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Hasící přístroj</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/07-priprava-nasyceneho-roztoku.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Příprava nasyceného roztoku</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/08-prace-s-plyny-1.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Práce s plyny 1</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/09-prace-s-plyny-2.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Práce s plyny 2</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/10-vodni-lazen-rychlost-chemicke-reakce.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Vodní lázeň - Rychlost chemické reakce</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/11-zihani-priprava-oxidu-chromiteho.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Žíhání - Příprava oxidu chomitého</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/12-filtrace-priprava-pxodi-chromiteho.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Filtrace - Příprava oxidu chomitého</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/13-destilace-vodni-parou.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Destilace vodní parou</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/14-odsavani-priprava-jodoformu.jpg" alt="" onclick="openFullImg(this.src)" />
+                <figcaption>Odsávání - Příprava jodoformu</figcaption> 
+            </figure>
+        </div>
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic, text) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>

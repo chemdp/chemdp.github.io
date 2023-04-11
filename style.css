@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto Condensed', sans-serif; /*FONTY POU�IT� NA T�TO STR�NCE MUS� B�T I V CSS*/
+}
+
+.background {   /* fotka na pozad� */
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/dalle.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    margin-right: auto;
+}
+
+nav {
+    padding: 2% 6%;
+}
+
+nav img{
+    width: 222px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    padding: 8px 12px;
+    
+}
+.nav-links ul li a figcaption {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box h2{
+    font-size: 42px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: white;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    border: 1px solid rgba(4, 9, 30, 0.7);
+    background: rgba(4, 9, 30, 0.7);
+    transition: 0.54321s;
+}
+nav .fa{
+    display: none;
+}
+
+.topnav-right {
+    float: right;
+}
+
+
+h1, h2, p, a, li {
+    color:#fff
+}
+
+.ul-columns {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.center-list {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.center-list li {
+    margin-bottom: 3px;
+}
+
+
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.content {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header {   /* fotka na pozad� */
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/dalle.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+iframe { 
+    width: 1280px;
+    height: 720px;
+    display: block;
+}
